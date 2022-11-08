@@ -1,6 +1,12 @@
+import Head from 'next/head';
+
 const Contact = () => {
   return (
     <div className="page-wrapper">
+      <Head>
+        <title>Kontakt</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <h1 className="smaller-title">Kontakt</h1>
       <h2 className="smaller-subtitle">
         Wenn Du Kontakt mit mir aufnehmen möchtest, <br />
