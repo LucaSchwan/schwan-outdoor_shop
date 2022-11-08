@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </nav>
       <Component {...pageProps} />
       <footer>
-        <div className="dev">Made by ehrenschwan</div>
+        <div className="dev">Copyright © 2022 ehrenschwan</div>
       </footer>
     </div>
   );
