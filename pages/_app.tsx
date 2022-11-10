@@ -1,18 +1,21 @@
-import '../styles/globals.css';
+import '../styles/globals.scss';
+import styles from '../styles/App.module.scss';
 import type { AppProps } from 'next/app';
 import Link from 'next/link';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className="content-bg">
+    <div className={styles.content_bg}>
       <nav>
-        <Link href="/" className="logo">
+        <Link href="/" className={styles.logo}>
           schwan-outdoor.shop
         </Link>
       </nav>
-      <Component {...pageProps} />
+      <div className={styles.page_wrapper}>
+        <Component {...pageProps} />
+      </div>
       <footer>
-        <div className="dev">Copyright © 2022 ehrenschwan</div>
+        <div className={styles.dev}>Made by ehrenschwan</div>
       </footer>
     </div>
   );

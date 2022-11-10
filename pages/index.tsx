@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Head from 'next/head';
+import styles from '../styles/Index.module.scss';
 
 const Home = () => {
   return (
@@ -7,15 +8,15 @@ const Home = () => {
       <Head>
         <title>Home</title>
       </Head>
-      <h1 className="title">keep it simple</h1>
-      <h2 className="subtitle">
+      <h1 className={styles.title}>keep it simple</h1>
+      <h2 className={styles.subtitle}>
         Beratung und Begleitung bei Deinem Weg zum eigenen Camper
       </h2>
-      <div className="links">
-        <div className="contact-link">
+      <div className={styles.links}>
+        <div className={styles.contact_link}>
           <Link href="/kontakt">Kontakt</Link>
         </div>
-        <div className="about-me-link">
+        <div className={styles.about_me_link}>
           <Link href="/about-me">Über Mich</Link>
         </div>
       </div>

@@ -1,0 +1,38 @@
+@import 'colors';
+
+.logo {
+  font-size: 2rem;
+  padding-left: 4rem;
+}
+
+.logo:hover {
+  color: #aaa;
+}
+
+.dev {
+  padding: 20px;
+}
+
+.content_bg {
+  background-image: linear-gradient($transparentBackground,
+      $transparentBackground),
+    url('../public/schwan.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.page_wrapper {
+  padding-left: 8rem;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .page_wrapper {
+    padding-left: 4rem;
+  }
+
+  .logo {
+    padding-left: 2rem;
+  }
+}
