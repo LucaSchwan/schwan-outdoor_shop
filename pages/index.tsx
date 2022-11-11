@@ -4,7 +4,7 @@ import styles from '../styles/Index.module.scss';
 
 const Home = () => {
   return (
-    <div className="page-wrapper">
+    <>
       <Head>
         <title>Home</title>
       </Head>
@@ -20,7 +20,7 @@ const Home = () => {
           <Link href="/about-me">Über Mich</Link>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

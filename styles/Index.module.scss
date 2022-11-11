@@ -4,6 +4,12 @@
 .links {
   display: flex;
   flex-direction: row;
+	align-items: center;
+
+	@media only screen and (max-width: 490px) {
+		flex-direction: column;
+		align-items: flex-start;
+	}
 }
 
 @mixin link($borderColor, $backgroundColor) {
@@ -12,15 +18,19 @@
   background-color: $backgroundColor;
   color: white;
   font-size: 1.5rem;
-  text-align: center;
 	padding: 0 1rem;
-  height: calc(3rem - 0.4rem);
+  min-height: calc(3rem - 0.4rem);
   margin: 0.3rem;
 
   a {
-  	vertical-align: middle;
 		height: 100%;
 		width: 100%;
+	}
+
+	@media only screen and (max-width: 490px) {
+		a {
+			font-size: 1.3rem;
+		}
 	}
 
 	&:hover {
