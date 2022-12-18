@@ -1,1 +1,35 @@
 @import 'standard';
+@import 'colors';
+
+.about_me_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.about_me_text > p {
+    font-size: 1.5rem;
+    width: 60%;
+    color: $textColor;
+    padding: 0;
+    margin: 0;
+
+	@media only screen and (max-width: $xxlarge) {
+        width: 80%;
+        font-size: 1.3rem;
+    }
+    
+	@media only screen and (max-width: $large) {
+        font-size: 1.2rem;
+    }
+
+	@media only screen and (max-width: $medium) {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+	@media only screen and (max-width: $small) {
+        padding: 0;
+        font-size: 1rem;
+    }
+
+}
