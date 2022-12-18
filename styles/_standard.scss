@@ -1,10 +1,18 @@
+// breakpoints 
+$small: 640px;
+$medium: 758px;
+$large: 1024px;
+$xlarge: 1280px;
+$xxlarge: 1536px;
+
 .title {
   color: white;
   font-weight: 700;
   font-size: 5rem;
   margin-top: 3rem;
 
-  @media only screen and (max-width: 430px) {
+  @media only screen and (max-width: $small) {
+    margin-top: 1.5rem;
     font-size: 4rem;
   }
 }
@@ -16,11 +24,10 @@
   font-size: 1.5rem;
   margin-bottom: 0 2rem 0 0 ;
 
-  @media only screen and (max-width: 490px) {
+  @media only screen and (max-width: $small) {
     font-size: 1.5rem;
   }
 }
-
 
 .smaller_title {
   color: white;
@@ -34,7 +41,7 @@
   font-weight: 400;
   font-style: italic;
 
-  @media only screen and (max-width: 430px) {
+  @media only screen and (max-width: $small) {
     font-size: 1.25rem;
   }
 }

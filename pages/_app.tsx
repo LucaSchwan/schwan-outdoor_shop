@@ -5,18 +5,16 @@ import Link from 'next/link';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={styles.content_bg}>
-      <nav>
-        <Link href="/" className={styles.logo}>
+    <div className={styles.pageLayout}>
+      <div className={styles.navbar}>
+        <Link href="/" className={styles.home}>
           schwan-outdoor.shop
         </Link>
-      </nav>
-      <div className={styles.page_wrapper}>
+      </div>
+      <div className={styles.content}>
         <Component {...pageProps} />
       </div>
-      <footer>
-        <div className={styles.dev}>Made by ehrenschwan</div>
-      </footer>
+      <div className={styles.footer}>Made by ehrenschwan</div>
     </div>
   );
 }
