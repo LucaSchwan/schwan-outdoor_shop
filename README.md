@@ -1,5 +1,7 @@
 # schwan-outdoor.shop (old)
 
+![Pic of the website](/pics/schwan-outdoor_shop.png)
+
 This is the old version of the website I wrote for my dad. The new version is written in SvelteKit and is hosted at my [forgejo](https://forgejo.org) which is not yet public.
 
 The following is slightly modified from the original Next.js README:
